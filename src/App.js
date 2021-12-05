@@ -5,14 +5,8 @@ import FeedbackOptions from './components/FeedbackOptions';
 import Notification from './components/Notification';
 import Statistics from './components/Statistics';
 
-const INITIAL_STATE = {
-  good: 0,
-  neutral: 0,
-  bad: 0,
-};
-
 class App extends Component {
-  state = { ...INITIAL_STATE };
+  state = { good: 0, neutral: 0, bad: 0 };
 
   onLeaveFeedback = option => {
     this.setState(prevState => {
